@@ -16,7 +16,7 @@ const houses = [];
 const { CHAT_ID, BOT_API } = process.env;
 
 const urls = [
-    'https://www.funda.nl/zoeken/koop?selected_area=%5B%22waalre%22,%22valkenswaard%22,%22riethoven%22,%22westerhoven%22,%22best%22,%22bergeijk%22,%22nuenen%22,%22geldrop%22,%22heeze%22,%22eersel%22%5D&price=%22-450000%22&object_type=%5B%22house%22%5D&publication_date=%2230%22&availability=%5B%22available%22%5D&floor_area=%22100-%22&bedrooms=%223-%22&energy_label=%5B%22A%2B%2B%2B%2B%2B%22,%22A%2B%2B%2B%2B%22,%22A%2B%2B%2B%22,%22A%2B%2B%22,%22A%2B%22,%22A%22,%22B%22,%22C%22%5D&exterior_space_type=%5B%22garden%22%5D&exterior_space_garden_size=%2225-%22&garage_capacity=%221-%22',
+    'https://www.funda.nl/zoeken/koop?selected_area=%5B%22eindhoven%22%5D&price=%22-450000%22&object_type=%5B%22house%22%5D&publication_date=%2230%22&availability=%5B%22available%22%5D&floor_area=%22100-%22&bedrooms=%223-%22&energy_label=%5B%22A%2B%2B%2B%2B%2B%22,%22A%2B%2B%2B%2B%22,%22A%2B%2B%2B%22,%22A%2B%2B%22,%22A%2B%22,%22A%22,%22B%22,%22C%22%5D&exterior_space_type=%5B%22garden%22%5D&exterior_space_garden_size=%2225-%22&garage_capacity=%221-%22',
 ];
 
 const runTask = async () => {
