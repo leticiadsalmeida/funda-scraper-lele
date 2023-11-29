@@ -128,9 +128,9 @@ const runPuppeteer = async (url) => {
         const subtitleText = headerSubtitle?.innerHTML?.trim();
 
         let path = urlPath;
-        if (!path.includes('https://www.funda.nl')) {
-            path = `https://www.funda.nl${urlPath}`;
-        }
+        // if (!path.includes('https://www.funda.nl')) {
+        //     path = `https://www.funda.nl${urlPath}`;
+        // }
 
         path = path.replace('?navigateSource=resultlist', '');
         if (path && !pastResults.has(path) && !newResults.has(path)) {
