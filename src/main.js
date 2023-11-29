@@ -119,18 +119,18 @@ const runPuppeteer = async (url) => {
 
 
     console.log('parsing funda.nl data');
-    const result = dom.window.document.querySelectorAll('div.p-4');
+    const result = dom.window.document.querySelectorAll('.search-result');
     console.log(result.length);
     for (const element of result) {
         console.log(element);
         const urlPath = element?.querySelectorAll('a')?.[0]?.href;
-        const headerSubtitle = element?.querySelector('.search_result__header-subtitle');
+        const headerSubtitle = element?.querySelector('.search-result__header-subtitle');
         const subtitleText = headerSubtitle?.innerHTML?.trim();
 
         let path = urlPath;
-        // if (!path.includes('https://www.funda.nl')) {
-        //     path = `https://www.funda.nl${urlPath}`;
-        // }
+        if (!path.includes('https://www.funda.nl')) {
+            path = `https://www.funda.nl${urlPath}`;
+        }
 
         path = path.replace('?navigateSource=resultlist', '');
         if (path && !pastResults.has(path) && !newResults.has(path)) {
