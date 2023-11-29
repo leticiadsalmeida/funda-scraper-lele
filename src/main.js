@@ -16,11 +16,11 @@ const houses = [];
 const { CHAT_ID, BOT_API } = process.env;
 
 const urls = [
-    'https://www.funda.nl/en/koop/eindhoven/0-400000/110+woonopp/3+slaapkamers/1-dag/',
-    'https://www.funda.nl/en/koop/veldhoven/0-400000/110+woonopp/3+slaapkamers/1-dag/',
-    'https://www.funda.nl/en/koop/geldrop/0-400000/110+woonopp/3+slaapkamers/1-dag/',
-    'https://www.funda.nl/en/koop/neunen/0-400000/110+woonopp/3+slaapkamers/1-dag/',
-    'https://www.funda.nl/en/koop/s-Hertogenbosch/0-400000/110+woonopp/3+slaapkamers/1-dag/',
+    'https://www.funda.nl/en/koop/eindhoven/0-400000/110+woonopp/3+slaapkamers/30-dag/',
+    'https://www.funda.nl/en/koop/veldhoven/0-400000/110+woonopp/3+slaapkamers/30-dag/',
+    'https://www.funda.nl/en/koop/geldrop/0-400000/110+woonopp/3+slaapkamers/30-dag/',
+    'https://www.funda.nl/en/koop/neunen/0-400000/110+woonopp/3+slaapkamers/30-dag/',
+    'https://www.funda.nl/en/koop/s-Hertogenbosch/0-400000/110+woonopp/3+slaapkamers/30-dag/',
 ];
 
 const runTask = async () => {
