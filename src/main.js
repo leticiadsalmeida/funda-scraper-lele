@@ -122,8 +122,8 @@ const runPuppeteer = async (url) => {
     const result = dom.window.document.querySelectorAll('div.pb-4');
     console.log(result.length);
     for (const element of result) {
-        console.log(element);
         const urlPath = element?.querySelectorAll('a')?.[0]?.href;
+        console.log(urlPath);
         const headerSubtitle = element?.querySelector('.search-result__header-subtitle');
         const subtitleText = headerSubtitle?.innerHTML?.trim();
 
