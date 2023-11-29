@@ -11,9 +11,9 @@ export const getZipCode = (elementText) => {
     const zipCodeRe = /\d\d\d\d\s*[A-Z][A-Z]/;
     const match = elementText.match(zipCodeRe);
 
-    if (match[0]) {
-        return match[0].replaceAll(' ', '');
-    }
+    // if (match[0]) {
+    //     return match[0].replaceAll(' ', '');
+    // }
 
     return null;
 }
