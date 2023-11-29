@@ -119,7 +119,7 @@ const runPuppeteer = async (url) => {
 
 
     console.log('parsing funda.nl data');
-    const result = dom.window.document.querySelectorAll('.search_result');
+    const result = dom.window.document.querySelectorAll('div.p-4');
     console.log(result.length);
     for (const element of result) {
         console.log(element);
